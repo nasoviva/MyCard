@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct InfoView: View {
+    
+    let text: String
+    let imageName: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RoundedRectangle(cornerRadius: 25)
+            .frame(height: 50)
+            .foregroundStyle(.white)
+            .overlay(HStack {
+                Image(imageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 20, height: 20)
+                    .foregroundColor(.green)
+                Text(text)
+                    .foregroundStyle(.black)
+            })
+            .padding(.all)
     }
 }
 
 #Preview {
-    InfoView()
+    InfoView(text: "I am", imageName: "phone.fill")
+        .previewLayout(.sizeThatFits)
 }

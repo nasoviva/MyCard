@@ -11,6 +11,9 @@
 		0D7BE0862C34DA0800E7FCEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BE0852C34DA0800E7FCEA /* ContentView.swift */; };
 		0D7BE0882C34DA0900E7FCEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D7BE0872C34DA0900E7FCEA /* Assets.xcassets */; };
 		0D7BE08B2C34DA0900E7FCEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D7BE08A2C34DA0900E7FCEA /* Preview Assets.xcassets */; };
+		0D7BE0952C34DCBA00E7FCEA /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D7BE0942C34DCBA00E7FCEA /* Pacifico-Regular.ttf */; };
+		0DD9FA462C377EA600BBA9A8 /* Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9FA452C377EA600BBA9A8 /* Screen.png */; };
+		0DF86A912C36225900A23014 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF86A902C36225900A23014 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		0D7BE0852C34DA0800E7FCEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D7BE0872C34DA0900E7FCEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D7BE08A2C34DA0900E7FCEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D7BE0932C34DC2100E7FCEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0D7BE0942C34DCBA00E7FCEA /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pacifico-Regular.ttf"; path = "../../../../../Downloads/Pacifico/Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		0DD9FA452C377EA600BBA9A8 /* Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screen.png; sourceTree = "<group>"; };
+		0DF86A902C36225900A23014 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		0D7BE0822C34DA0800E7FCEA /* MyCard */ = {
 			isa = PBXGroup;
 			children = (
+				0D7BE0932C34DC2100E7FCEA /* Info.plist */,
+				0D7BE0912C34DB1500E7FCEA /* Fonts */,
 				0D7BE0832C34DA0800E7FCEA /* MyCardApp.swift */,
 				0D7BE0852C34DA0800E7FCEA /* ContentView.swift */,
+				0DF86A902C36225900A23014 /* InfoView.swift */,
+				0DD9FA452C377EA600BBA9A8 /* Screen.png */,
 				0D7BE0872C34DA0900E7FCEA /* Assets.xcassets */,
 				0D7BE0892C34DA0900E7FCEA /* Preview Content */,
 			);
@@ -65,6 +76,14 @@
 				0D7BE08A2C34DA0900E7FCEA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0D7BE0912C34DB1500E7FCEA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0D7BE0942C34DCBA00E7FCEA /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +144,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7BE0952C34DCBA00E7FCEA /* Pacifico-Regular.ttf in Resources */,
+				0DD9FA462C377EA600BBA9A8 /* Screen.png in Resources */,
 				0D7BE08B2C34DA0900E7FCEA /* Preview Assets.xcassets in Resources */,
 				0D7BE0882C34DA0900E7FCEA /* Assets.xcassets in Resources */,
 			);
@@ -138,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D7BE0862C34DA0800E7FCEA /* ContentView.swift in Sources */,
+				0DF86A912C36225900A23014 /* InfoView.swift in Sources */,
 				0D7BE0842C34DA0800E7FCEA /* MyCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,11 +297,12 @@
 				DEVELOPMENT_TEAM = 78U9V66SWD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +327,12 @@
 				DEVELOPMENT_TEAM = 78U9V66SWD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
